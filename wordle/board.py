@@ -16,11 +16,10 @@ class Board():
 
 
     def addWord(self, word):
-        if Utils.isValid(word):
+        if isValid(word):
             for i in range(len(word)):
                 self.board[self.currentRow][i] = word[i]
             self.currentRow += 1
-
 
     def __str__(self):
         self.display()

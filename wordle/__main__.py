@@ -1,5 +1,8 @@
+from wordle.board import Board
+
 def main():
-    print('in main')
+    b = Board()
+    print(b)
 
 if __name__ == '__main__':
     main()

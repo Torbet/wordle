@@ -1,8 +1,12 @@
-def readFile(fileName):
-    fileObj = open(fileName, "r") #opens the file in read mode.
-    words = fileObj. read(). splitlines() #puts the file into an array.
+def getPossibleWords():
+    fileObj = open("data/possible_words.txt", "r")
+    words = fileObj. read(). splitlines()
     fileObj. close()
     return words
 
 def isValid(word):
-   return True
+    if word in getPossibleWords():
+        return True
+    else:
+        return False
+
