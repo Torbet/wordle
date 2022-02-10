@@ -1,2 +1,10 @@
-wordle.egg-info
 __pycache__
+notebooks
+.*.swp
+.*.swo
+*.pyc
+build
+dist
+*.egg-info
+/env
+a.out
