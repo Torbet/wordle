@@ -1,0 +1,3 @@
+[console_scripts]
+wordle = wordle.__main__:main
+
