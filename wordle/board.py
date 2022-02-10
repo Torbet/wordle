@@ -1,4 +1,4 @@
-from utils import *
+from wordle.helpers import isValid
 
 class Board():
     def __init__(self):

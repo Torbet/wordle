@@ -1,1 +1,1 @@
-import wordle.utils
+import wordle.board
