@@ -1,5 +1,5 @@
 def getPossibleWords():
-    fileObj = open("data/possible_words.txt", "r")
+    fileObj = open("./data/possible_words.txt", "r")
     words = fileObj. read(). splitlines()
     fileObj. close()
     return words

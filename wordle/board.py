@@ -1,4 +1,5 @@
 from wordle.helpers import *
+import os
 
 class Board():
     def __init__(self):
@@ -14,13 +15,20 @@ class Board():
             for col in row:
                 print(col, end=' ')
 
+    def isOngoing(self):
+        return not(self.currentRow == self.rows)
 
     def addWord(self, word):
         if isValid(word):
             for i in range(len(word)):
                 self.board[self.currentRow][i] = word[i]
             self.currentRow += 1
+        else: 
+            self.board[self.currentRow] = ['-', '-', '-', '-', '-']
+
 
     def __str__(self):
+        import os
+        os.system('clear')
         self.display()
         return ''
